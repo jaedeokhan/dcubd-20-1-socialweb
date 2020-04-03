@@ -45,3 +45,84 @@
 </head>
 ```
 
+## 3장 HTML5 기본 태그
+* 글자 태그 -> h1~h6 : 제목 글자 생성
+* 목록 태그
+ * p, br, hr : 본문 생성
+ * a : 하이퍼링크 생성
+ * b, i, small, sub, sup, ins, del : 글자 모양 지정
+* 테이블 태그 
+ * ul/ ol/ li : 순서가 없는/있는 목록 생성, 목록 요소 생성
+* 미디어 태그
+ * img, audio, video : 이미지, 오디오 , 비디오 삽입
+ 
+ ### 3.1 제목과 본문 글자 태그
+ #### 1. 제목 글자 : h = Heading : h1~h6
+ #### 2. 본문 글자
+  * p : 본문 문단 생성 
+  * br : 줄 바꿈
+  * hr : 수평 줄 삽입
+  
+#### 3. 하이퍼텍스트
+ * 사용자의 선택에 따라 특정 정보로 이동하는 조직된 문서
+ * a tag(Anchor): 다른 웹 페이지나 웹 페이지 내부의 특정 위치로 이동
+ * Href : Hypyter Reference 를 의미한다.
+```html
+<a href="http://www.cu.ac.kr">대구가톨릭대학교</a>
+```
+#### 3.1 앵커 태그 4가지 경로
+* 절대 경로
+* 상대 경로
+* 아이디 경로
+ * #name - id 속성이 name인 태그의 위치로 이동
+* 메일 경로
+ * mailto : jaedeokhan@gmail.com -> 해당 주소로 메일 전송
+ 
+ #### 3.1.3 웹 페이지 내부에 연결하기 -> id
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.hanbit.co.kr">한빛미디어</a>
+    <a href="http://www.naver.com">네이버</a>
+    <a href="http://www.daum.com">다음</a>
+    <a href="#alpha">Alpha 부문</a>
+    <a href="#beta">Beta 부문</a>
+    <a href="#gamma">Gamma 부문</a>
+    <hr>
+    <h1 id="alpha">Alpha</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+    <h1 id="beta">Beta</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+    <h1 id="gamma"></h1>
+    <p>Lorem ipsum dolor sit amet</p>
+</body>
+</html>
+```
+ 
+
+
+
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+
