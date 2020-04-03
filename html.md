@@ -105,12 +105,157 @@
 </html>
 ```
  
+#### 3.2.1 글자 모양 태그
+* b : bold 
+* i : italic
+* small, sub(subscript) = 아래 첨자, sup(supscript) = 위 첨자, ins(insert) = 밑줄글자, del(delete) = 취소선이 그어진 글자
 
 
+#### 3.2.2 내비게이션 메뉴 
+* 웹 사이트의 다른 웹 페이지로 이동할 수 있는 버튼
+* ul : 순서가 없는 목록 unordered list 생성
+* ol : 순서가 있는 목록 ordered list 생성
+* li : 목록 요소 list item 생성
+
+#### 3.2.3 테이블 태그
+* table : 표 삽입
+* tr(table row) : 표에 행 삽입
+* th(table heading) : 표의 제목 셀 생성
+* td(table data) 표의 일반 셀 생성
+
+> 시간표 만들기 -> table의 border은 겉의 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="10">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td>국어</td>
+                <td>과학</td>
+                <td>미술</td>
+                <td>기술</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>도덕</td>
+                <td>체육</td>
+                <td>영어</td>
+                <td>수학</td>
+                <td>사회</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+#### 3.2.4 테이블 태그의 속성
+* table - border : 표의 테두리 두께 지정
+* th,td 
+ * colspan : 셀의 너비 지정
+ * rowspan : 셀의 높이 지정
+
+> 행.열 병합 표 생성 -> colspan 속성과 rowspan 속성을 적용
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2">지역별 홍차</th>
+        </tr>
+        <tr>
+            <th rowspan="3">중국</th>
+            <th>정산소종</th>
+        </tr>
+        <tr><td>기문</td></tr>
+        <tr><td>운남</td></tr>
+        <tr>
+            <th rowspan="4">인도 및 스리랑카</th>
+            <td>아삼</td>
+        </tr>
+        <tr><td>실론</td></tr>
+        <tr><td>다질링</td></tr>
+        <tr><td>닐기리</td></tr>
+    </table>
+</body>
+</html>
+```
+
+#### 4. 미디어 태그
+* 이미지, 오디오, 비디오 등 멀티미디어 넣을 때 사용
+
+#### 4.1 미디어 태그 구분
+* 내용물을 가질 수 있는 태그 -> <audio></audio>, <video></video>
+* 내용물을 가질 수 없는 태그 -> <img>
+
+#### 4.1.1 미디어 태그 속성 
+* img 태그 
+ * src : 이미지 경로 지정
+ * alt : 이미지가 없을 대 나오는 글자 지정
+ * width : 이미지의 너비 지정
+ * height : 이미지의 높이 짖어
+
+* audio, video 태그
+ * src : 음악, 비디오 파일의 경로 지정
+ * preload : 음악, 비디오 준비 중일 때 데이터를 모두 불러올지 여부 지정
+ * autoplay : 음악, 비디오의 자동 재생 여부 지정
+ * loop : 음악, 비디오의 반복 여부 지정
+ * controls : 음악, 비디오의 재생 도구 출력 여부 지정
+ 
+* video 태그
+ * width : 비디오의 너비 지정
+ * height : 비디오의 높이 지정
+ 
+> 기본 예제 3-9 : 멀티미디어(이미지, 오디오, 비디오) 삽입
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="http://www.hanbit.co.kr/images/common/logo_hanbit.png" alt="펭귄" width="300">
+    <br>
+    <img src="Noting" alt="그림이 존재하지 않습니다." width="300">
+</body>
+</html>
+```
+  
+> 음악 파일 준비: 준비 파일(오디오.mp3)을 HTML 페이지와 같은 폴더에 넣기.
+```html
+<body>
+ <audio src='이름.mp3' controls='controls'></audio>
+</body>
+```
 
 
  
-  
   
   
   
