@@ -96,6 +96,10 @@ $ pip install pymysql[rsa]
 #### 4.2.1 pymysql 사용하기전에 bind-address 설정해야 외부에서 접근이 가능하다.
 * vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```bash
+# OperationalError: (2003, "Can't connect to MySQL server on '54.84.72.175' 
+#([WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다)")
+# 위와 같은 에러가 나타난다.
+
 bind-address = 0.0.0.0 # 변경을 하면 모든 곳에서 접근이 가능하다.
 # 0.0.0.0 == * == ::
 ```
