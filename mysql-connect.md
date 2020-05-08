@@ -219,6 +219,34 @@ finally:
     db.close()
 ```
 
+#### 4.4 python startwitdth() 는 str이 안에 존재하는지 아닌지 true, false 체크하는 함수
+
+##### Description 
+Python string method startwith() checks whether string starts with str, optionaly restricting the mathcing with the given indices start and end.
+
+##### Syntax
+Following is the syntax for startwith() method - 
+```python
+str.startwith(str, beg=0, end=len(string));
+```
+
+##### Parameters
+* str - This is the string to be checked
+* beg - This is the optional parameter to set start index of the matching boundary.
+* end - This is the optional parameter to end start index of the matiching boundary.
+
+
+```python
+str = "this is string example....wow!!!";
+
+print str.startwith( 'this' )      # True
+print str.startwith( 'is', 2, 4 )  # True
+print str.startwith( 'this', 2, 4) # False
+```
+
+#### 4.5 pymysql에 데이터를 저장을 할때 PRIMARY KEY를 사용하지 않아도 되나?
+PRIMARY KEY는 여러개의 TABLE이 존재하면 JOIN이나 다른 연산을 위해서 필요한 것이다.
+잠시 잊고 있었다..ㅎㅎ
 
 
 
