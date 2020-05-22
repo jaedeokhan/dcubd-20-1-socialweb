@@ -8,7 +8,7 @@
 6. 전처리는 아직 하지 않고, 일단 클러스터링을 진행을 한다.
 7. 클러스터링 진행
 
-[1-6 항목 file](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0508Fri_naver_news_crawling)
+[1-6 항목 file](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0508Fri_naver_news_crawling.ipynb)
 
 
 #### 1. Jupyter Notebook 에서 Pymysql 모듈을 사용해서 네이버 뉴스 기사 크롤링하기
@@ -195,5 +195,5 @@ save_to_file(news_datas)
 ```
 
 #### 4. K-평균 군집 분석
-[7- 클러스터링 file](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0521fri_news_clustering)
+[7- 클러스터링 file](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0521fri_news_clustering.ipynb)
 
