@@ -5,16 +5,18 @@
 1. pymysql 사용하기 위한 설치 및 설정 & 기본 문법
 2. 크롤링과  pymysql  모듈을 사용해서 mysql에 데이터 저장하고, SELECT DDL로 데이터를 읽어와서 .csv 파일로 저장한 뒤에 K-MEAN, PDA 를 사용해서 데이터 군집화 진행을 한다.
 
-### 1.
+### Part 1
 1. Ec2 Ubuntu 18.04 instance 
 2. mysql config & utf-8 set
 3. pymysql 사용법 & bind-address 설정 
 
-### 2.
+### Part 2
 1. Naver News Crawling 
 2. Crawling 진행한 데이터를 pymysql을 사용해서 읽어오기.  
 3. SELECT해서 가져온 데이터를 .csv 파일로 저장하기.
 4. K-mean 군집 분석 진행
+
+## Part 1
 
 #### 1. Ec2 Ubuntu 18.04 instance create
 보안그룹 자신의 ssh , mysql 열어주기.
@@ -263,6 +265,7 @@ print str.startwith( 'this', 2, 4) # False
 PRIMARY KEY는 여러개의 TABLE이 존재하면 JOIN이나 다른 연산을 위해서 필요한 것이다.
 잠시 잊고 있었다..ㅎㅎ
 
+## Part 2
 
 ## Jupyter Notebook 에서 Pymysql 모듈 이용해서 mysql에 데이터 저장 후 SELECT로 읽어내서 .csv로 저장하고 군집화하기.
 ### 2020 0522 FRI create
