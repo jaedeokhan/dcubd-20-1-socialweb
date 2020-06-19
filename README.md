@@ -23,3 +23,5 @@
 11. 0521 FRI 네이버 뉴스 크롤링으로 유한양행, 라돈, 삼성전자 데이터 가져와서 .csv 파일로 만들고 K-MEAN 군집화 수행 - [0521fri_news_clustering.ipynb](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0521fri_news_clustering.ipynb)
 12. 0610 WED K-대푯값 군집 분석 - [0610wed_k-대푯값.ipynb](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0610wed_k-%EB%8C%80%ED%91%AF%EA%B0%92.ipynb)
 13. 0612 FRI LDA(Latent Dirichlet Allocaiton) 토픽 모델링 - [0612FRI_토픽모델링.ipynb](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0612FRI_%ED%86%A0%ED%94%BD%EB%AA%A8%EB%8D%B8%EB%A7%81.ipynb)
+14. 0619 FRI 크롤링한 csv 파일을 이용해서 train/test dataset을 나눠서 LDA 토픽 모델링 - [0617WED_수집데이터로LDA모델.ipynb](https://github.com/jaedeokhan/ducbd-20-1-socialweb/blob/master/Crawling/0617WED_%EC%88%98%EC%A7%91%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9CLDA%EB%AA%A8%EB%8D%B8.ipynb)
+
