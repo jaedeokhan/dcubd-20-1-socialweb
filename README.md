@@ -8,7 +8,17 @@
 4. Crawling sibling 내용 정리 [sibling.md](https://github.com/jaedeokhan/SocialWebMining/blob/master/mdfile/sibling.md)
 5. 위의 1번, 네이버 뉴스 크롤링, pymysql 사용법, .save data, .save file, K-Mean 군집 분석 [0605_pymysql.use.md](https://github.com/jaedeokhan/SocialWebMining/blob/master/mdfile/0605_pymysql_use.md)
 
-### 2. Crawlig 진행
+### 2. .py file 
+1. pymysql 사용해서 CREATE TABLE 실행 [create_table.py](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/create_table.py)
+   * pip install pymysql[rsa]
+2. request, BeautifulSoup 사용해서 제목, 날짜, 신문사, 내용 크롤링 [crawling_naver.py](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/crawling_naver.py)
+   * pip install request
+   * pip insatll bs4
+3. naver news 를 원하는 쿼리문을 사용해서 크롤링하기 [inser_naver_news.py](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/insert_naver_news.py)
+4. pymysql 로 SELECT 실행 후 fetchall 해서 데이터를 받아서 딕셔너리를 이용해 리스트에 저장 [select_data.py](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/select_data.py)
+5. select_data.py 에서 save_to_list() 함수를 받아서 .csv 파일로 저장하기 [save.py](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/save.py)
+
+### 3. Jupyter Notebook 으로 Crawling 진행
 1. 0417 FRI 크롤링 기초 - 영어 교육 사이트 데이터 가져오기, 대구가톨릭 데이터 가져오기 [0417Fri_Crawling.ipynb](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0417Fri_Crawling.ipynb)
 2. 0422 WED 네이버 댓글 크롤링 [0422_wed.ipynb](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0422_wed.ipynb)
 3. 0424 FRI 네이버 뉴스 크롤링 진행, pymysql 모듈을 사용해서 mysql에 데이터 삽입 [0424_fri_naver_news_address.ipynb](https://github.com/jaedeokhan/SocialWebMining/blob/master/Crawling/0424_fri_naver_news_address.ipynb)
